@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>finMath.net: Contents</title>
+		<link rel="stylesheet" type="text/css" href="http://finmath.net/finmathnet-style.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="mathematical finance finmath java monte-carlo simulation interest rates ois discounting"/>
+		<meta name="description" content="Methodologies and algorithms in mathematical finance. Object oriented framework covering interest rates calibration, Monte-Carlo simulation and term structure models."/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="language" content="en"/>
+		<meta http-equiv="Content-Language" content="en"/>
+
+		<style type="text/css">
+			.menu-item {
+				font-size: 12pt;
+				line-height: 16pt;
+				font-face: plain; background: #eee; padding: 5px;
+				font-style: normal;
+				font-weight: bold;
+				margin-top: 14pt;
+			}
+				
+		</style>
+
+		<!-- Dublin Core -->		
+		<meta name="DC.Title" content="finmath"/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#title"/>
+		
+		<meta name="DC.Creator" content="Christian Fries"/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#creator"/>
+		
+		<meta name="DC.Creator.Address" content="email@christian-fries.de"/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#creator"/>
+		
+		<meta name="DC.Subject" content="Methodologies and Algorithms in Mathematical Finance."/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#subject"/>
+				
+		<meta name="DC.Publisher" content="Christian Fries"/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#publisher"/>
+		
+		<meta name="DC.Type" content="Interactive"/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#type"/>
+		
+		<meta name="DC.Format" scheme="IMT" content="text/html"/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#format"/>
+		<link rel="SCHEMA.imt" href="http://sunsite.auc.dk/RFC/rfc/rfc2046.html"/>
+		
+		<meta name="DC.Identifier" content="http://www.finmath.net"/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#identifier"/>
+		
+		<meta name="DC.Language" scheme="ISO639-1" content="en"/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#language"/>
+		
+		<meta name="DC.Date.X-MetadataLastModified" scheme="ISO8601" content="2014-04-18"/>
+		<link rel="SCHEMA.dc" href="http://purl.org/metadata/dublin_core_elements#date"/>
+	</head>
+	<body>
+		<script src="https://assets.digitalclimatestrike.net/widget.js" async></script>
+		<!--
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-849152-2");
+			pageTracker._trackPageview();
+		</script>
+		-->
+
+		<header>
+			<span class="logo-white">finMath</span><span class="logo-red">.net</span>
+		</header>
+
+		<div style="clear:both;"/>
+
+		<div style="font-size:75%; float:right;">
+			<a href="https://twitter.com/finmathnet" class="twitter-follow-button" data-show-count="false" data-lang="de">Follow @finmathnet on Twitter</a>
+			<!--
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			-->
+		</div>
+
+
+		<h1>Library - finmath lib</h1>
+		
+		<dl>
+			<dt class="menu-item">
+				<a href="http://finmath.net/finmath-lib/">finmath lib</a>: Java library with algorithms and methodologies related to mathematical finance.
+			</dt>
+			<dd>
+				For details see <a href="/finmath-lib/">finmath-lib site</a>.
+				<p>
+					Version 4.0.5 of finmath-lib may be download as <a href="releases/finmath-lib-4.0.5.zip">finmath-lib-4.0.5.zip</a>.
+				</p>
+
+				<p>
+					The library is part of the maven central repository.
+				</p>
+		
+				<p>
+					<small>
+					The material is released under the license contained in <tt><a href="releases/finmath-lib-4.0.5/LICENSE.txt">LICENSE.txt</a></tt>. See also the file <tt><a href="releases/finmath-lib-4.0.5/NOTICE.txt">NOTICE.txt</a></tt>.
+					</small>
+				</p>
+			</dd>
+
+			<dt class="menu-item">
+				<a href="http://finmath.net/finmath-lib-cuda-extensions/">finmath lib cuda extensions</a>: Vector class (RandomVaraible) running on GPUs (Cuda and OpenCL).
+			</dt>
+			<dd>
+				<p>
+					Enabling finmath lib with Cuda (via jcuda) and OpenCL (via jocl). - Running finmath lib models on a GPU.
+				</p>
+
+				<p>
+					The finmath lib cuda extensions provide a Cuda and OpenCL implementation of the finmath lib interfaces RandomVariable and BrownianMotion compatible with finmath lib 4.0.12 or later (tested on GRID GPU Kepler GK105, GeForce GTX 1080, GeForce GT 750M (Cuda and OpenCL) and ATI Radeon Pro 560 (OpenCL only)).
+				</p>
+			</dd>
+			
+			<dt class="menu-item">
+				<a href="http://finmath.net/finmath-lib-plot-extensions/">finmath lib plot extensions</a>: Convenient abstractions of some plotting libraries for lightweight and easy plotting.
+			</dt>
+			<dd>
+				<p>
+					This project provides abstractions for some plotting libraries (JFreeChart, JavaFX, JZY3D) and demo usages for finmath lib. It is provided for convenience to test and explore finmath lib.
+				</p>
+			</dd>
+		</dl>
+
+
+		<h1>Laboratory (Spreadsheets, Applets and Demos using finmath lib)</h1>
+
+		<dl>
+			<dt class="menu-item">
+				<a href="http://finmath.net/experiments/">finmath experiments</a>: Experiments using the Java shell - JShell.
+			</dt>
+			<dd>
+				For details see <a href="http://finmath.net/experiments/">experiments page</a>.
+				Examples:
+				<dl>
+					<dt>
+						<a href="experiments/montecarlo-blackscholes/">Monte-Carlo Simulation</a>
+					</dt>
+					<dd>
+						A small experiment creating a Monte-Carlo simulation of the Black-Scholes model and valuing a European option.
+					</dd>
+
+					<dt>
+						<a href="experiments/algorithmicdifferentiation-dependencyinjection/">Algorithmic Differentiation and Dependency Injection</a>
+					</dt>
+					<dd>
+						An experiment performing an algorithmic differentiation via dependency injection on a Monte-Carlo simulation of the Black-Scholes model.
+					</dd>
+
+					<dt>
+						<a href="experiments/algorithmicdifferentiation-forwardsensitivities">Algorithmic Differentiation for Forward Sensitivities</a>
+					</dt>
+					<dd>
+						An experiment performing an algorithmic differentiation via dependency injection on a Monte-Carlo simulation of the Black-Scholes model to derive all
+						forward sensitivities, performing a hedge simulation.
+					</dd>
+				
+				</dl>
+			</dd>
+
+			<dt class="menu-item">
+				<a href="http://finmath.net/spreadsheets/">finmath spreadsheets</a>: Spreadsheets providing methodologies from mathematical finance using finmath lib.
+			</dt>
+			<dd>
+				For details see <a href="http://finmath.net/spreadsheets/">spreadsheets page</a>.
+				Examples:
+				<dl>
+					<dt>
+						<a href="topics/curvecalibration/">Interest Rate Curve Calibration</a>
+					</dt>
+					<dd>
+						The sheet calibrates a set of different curves (including discounting curves (e.g., OIS) and forward curves) from swaps.
+					</dd>
+					<dt>
+						<a href="topics/libormarketmodel/">LIBOR Market Model</a>
+					</dt>
+					<dd>
+						The sheet allows to create a LIBOR market model calibrated to a given forward curve
+						and given swaptions. The parametrized volatility and correlation can be inspected.
+						Generated interest rate scenarios can ben extracted.
+					</dd>
+					<dt>
+						<a href="spreadsheets/">More...</a>
+					</dt>
+					<dd>
+						More sheets related to methodologies from mathematical finance.
+					</dd>
+				</dl>
+			</dd>
+
+			<dt class="menu-item">
+				<a href="http://christian-fries.de/finmath/applets/">finmath applets</a>: Java Applets illustrating some topics from mathematical finance.
+			</dt>
+			<dd>
+				Java Applets illustrating some topics from mathematical finance (using finmath lib).
+			</dd>
+
+			<dt class="menu-item">
+				<a href="http://finmath.net/tutorials/">finmath tutorials</a>: Experiments in Java and Excel.
+			</dt>
+			<dd>
+				We provide very basic tutorials for beginners (still under construction).
+			</dd>
+		</dl>
+
+		<h1>Documentation</h1>
+
+		<dl>
+			<dt class="menu-item">
+				<a href="finmath-lib/apidocs/index.html">finmath lib API documentation</a>.<br/>
+			</dt>
+			<dd>
+				Java doc API description.
+			</dd>
+
+			<dt class="menu-item">
+				<a href="doc/">methodology documentation</a>.
+			</dt>
+			<dd>
+				References to documentation of the methodology and theoretical background.
+			</dd>
+		</dl>
+
+		<br/>
+
+		<div id="footer">
+			<span style="padding-left: 20pt; padding-right: 20pt;">
+				<a href="http://finmath.net/contact/">[Contact / Imprint]</a>
+			</span>
+			<span style="padding-left: 20pt; padding-right: 20pt;">
+				<a href="http://finmath.net/privacy/">[Privacy]</a>
+			</span>
+		</div>
+	</body>
+</html>
