@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>finMath.net: Tutorials</title>
+		<link rel="stylesheet" type="text/css" href="../../finmathnet-style.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<!--
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-849152-2");
+			pageTracker._trackPageview();
+		</script>
+		-->
+
+		<header>
+			<span class="logo-white">finMath</span><span class="logo-red">.net</span>
+		</header>
+
+		<h1>Tutorial 001: Analytic Black-Scholes option pricer with a GUI.</h1>
+		
+		<h2>Task</h2>
+		
+		<ul>
+			<li>
+				Implement the Black-Scholes formula, which calculates the price of a European option under the Black-Scholes model, given the model parameters
+					<i>spot</i>,
+					<i>risk free rate</i>,
+					<i>volatility</i>,
+				and the product parameters
+					<i>maturity</i>
+					<i>strike</i>
+			</li>
+
+			<li>
+				Implement an inverse of the Black-Scholes formula, which calculates the (implied) volatility of the Black-Scholes model, given the model parameters
+					<i>spot</i>
+					<i>risk free rate</i>
+				and the product parameters of a European option
+					<i>maturity</i>
+					<i>strike</i>
+					<i>price</i>
+			</li>
+
+			<li>
+				Create a GUI
+			</li>
+		</ul>
+		
+		<h2>Hints</h2>
+		
+		<ul>
+			<li>
+				Create a class <code>AnalyticFormulas</code> whose purpose it will be to provide a collection of analytic formulas as class methods (static).</li>
+			<li>
+				Implement the analytic Black-Scholes formula as a class method <code>blackScholesOptionPrice</code>.
+				<ul>
+					<li>
+						For the cumulative normal distribution function use a library function, e.g., <code>cern.jet.stat.Probability.normal()</code> or <code>org.apache.commons.math.distribution.NormalDistributionImpl.cumulativeNormalDistribution()</code>.
+					</li>
+				</ul>			
+			</li>
+			
+			<li>
+				Implement the inverse of the Black-Scholes formula as a class method <code>blackScholesOptionImpliedVolatility</code>.
+				<ul>
+					<li>
+						Use <code>AnalyticFormulas.blackScholesOptionPrice()</code> from above in connection with a root finder, e.g., <code>net.finmath.rootFinder.BisectionSearch</code>.
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				Create a GUI using your favored GUI builder (this is not a tutorial on how to use a GUI builder). Add gui elements for the model and product parameters. Implement the following behaviour:
+				<ul>
+					<li>
+						If any field except the price is changed, calculate the price and show it.
+					</li>
+					<li>
+						If the price is changed, calculate the implied volatility and show it.
+					</li>
+				</ul>
+				Note: You have to account for the case where an invalid volatility is entered!
+			</li>
+		</ul>
+		
+		<h2>Solution / Example</h2>
+		
+		See <a href="http://svn.finmath.net/finmath%20experiments/trunk/src/net/finmath/experiments/blackScholes/BlackScholesOptionCaclulator.java">net.finmath.experiments.blackScholes.BlackScholesOptionCaclulator.java</a>.
+		
+		
+	</body>
+</html>

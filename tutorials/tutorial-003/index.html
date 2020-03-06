@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>finMath.net: Tutorials</title>
+		<link rel="stylesheet" type="text/css" href="../../finmathnet-style.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<!--
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-849152-2");
+			pageTracker._trackPageview();
+		</script>
+		-->
+
+		<header>
+			<span class="logo-white">finMath</span><span class="logo-red">.net</span>
+		</header>
+
+		<h1>Tutorial 003: Simple Test of the Brownian Motion</h1>
+		
+		<h2>Task</h2>
+
+		<ul>
+			<li>
+				Implement a function which takes an object of type <code>net.finmath.monteCarlo.BrownianMotionInterface</code> as argument and perfomes some basic tests with the object, e.g., calculating mean and variance of the Brownian increments.
+			</li>
+			<li>
+				Use the above function to run a test of an object of <code>net.finmath.monteCarlo.BrownianMotion</code>.
+			</li>			
+		</ul>
+
+		<h2>Remarks</h2>
+		
+		Since your function takes a <code>BrownianMotionInterface</code> it can be used with any object implementing this interface. Object of the class <code>net.finmath.monteCarlo.BrownianMotion</code> are just one possible implementation to be tested.
+
+		<h2>Solution / Example</h2>
+		
+		See <a href="http://svn.finmath.net/finmath%20lib/trunk/src/test/java/net.finmath.experiments.monteCarlo/BrownianMotionTests.java">net.finmath.experiments.monteCarlo.BrownianMotionTests.java</a>.
+		
+		
+	</body>
+</html>
