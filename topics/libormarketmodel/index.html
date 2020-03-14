@@ -120,14 +120,15 @@
 					<ul>
 						<li>
 							Create a <tt>LIBORVolatilityModel</tt>, e.g., by instantiating an object of class <tt>LIBORVolatilityModelFromGivenMatrix</tt>
-							or an object of class <tt style="word-wrap: break-word;">LIBORVolatilityModelFourParameterExponentialForm</tt>.
+							or an object of class
+							<code class="wrapable">LIBORVolatilityModelFourParameterExponentialForm</code>.
 						</li>
 						<li>
 							Create a <tt>LIBORCorrelationModel</tt>, e.g., by instantiating an object of class <tt>LIBORCorrelationModelExponentialDecay</tt>.
 						</li>
 					</ul>
 					Create an object of type <tt>LIBORCovarianceModelCalibrateable</tt> by packing the volatility and correlation model inside a
-					<tt style="word-wrap: break-word;">LIBORCovarianceModelFromVolatilityAndCorrelation</tt>.
+					<code class="wrapable">LIBORCovarianceModelFromVolatilityAndCorrelation</code>.
 				</li>
 				<li>
 					Create a <tt>LIBORMarketModel</tt> from the tenor time discretization, forward curve and covariance model.
@@ -147,7 +148,7 @@
 					Create the numerical scheme, the process, for the given model and the given Brownian motion, e.g., using <tt>EulerSchemeFromProcessModel</tt>.
 				</li>
 				<li>
-					Wrap the model and the process into <tt>LIBORMonteCarloSimulationFromLIBORModel</tt>.
+					Wrap the model and the process into <code class="wrapable">LIBORMonteCarloSimulationFromLIBORModel</code>.
 					This class implements the <tt>LIBORModelMonteCarloSimulationModel</tt> which is used in product valuation.
 					This object will just provide some convenient methods for obtaining forwards rates.
 				</li>
