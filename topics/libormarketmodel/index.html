@@ -99,15 +99,20 @@
 			<ol>
 				<li>
 					Create a tenor time discretization:
-					This is the discretization of the forward curve, i.e., the tenor. We create an object implementing the interface <tt>TimeDiscretizationInterface</tt>. Example is an object of class <tt>TimeDiscretization</tt>.
+					This is the discretization of the forward curve, i.e., the tenor.
+					We create an object implementing the interface <tt>TimeDiscretization</tt>.
+					Example is an object of class <tt>TimeDiscretizationFromArray</tt>.
 				</li>
 				<li>
 					Create a forward curve (the initial data of the LIBOR market model):
-					We create an object implementing <tt>ForwardCurveInterface</tt>, e.g., by creating an object via <tt>ForwardCurve.createForwardCurveFromForwards()</tt>.
+					We create an object implementing <tt>ForwardCurve</tt>,
+					e.g., by creating an object via <tt>createForwardCurveFromForwards()</tt>,
+					a static method of the <tt>ForwardCurveInterpolation</tt> class.
 				</li>
 				<li>
 					Create a simulation time discretization:
-					We create an object implementing the interface <tt>TimeDiscretizationInterface</tt>. Example is an object of class <tt>TimeDiscretization</tt>.
+					We create an object implementing the interface <tt>TimeDiscretization</tt>.
+					Example is an object of class <tt>TimeDiscretizationFromArray</tt>.
 				</li>
 				<li>
 					Create a covariance model, that is the diffusion of the LIBOR market model: We create a covariance model by creating separate volatility and correlation models:
